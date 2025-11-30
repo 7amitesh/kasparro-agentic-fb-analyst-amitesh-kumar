@@ -1,0 +1,312 @@
+[
+  {
+    "query": "Analyze ROAS drop in last 7 days",
+    "time": "2025-11-30T00:24:36.994307",
+    "tasks": [
+      {
+        "id": "t1",
+        "title": "compute_roas_trend",
+        "description": "compute daily ROAS for last N days"
+      },
+      {
+        "id": "t2",
+        "title": "audience_breakdown",
+        "description": "group metrics by audience_type and compute CTR/CPC/ROAS"
+      },
+      {
+        "id": "t3",
+        "title": "low_ctr_creatives",
+        "description": "list creatives with CTR below median"
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "hypothesis": "Low ROAS driven by audience: Broad",
+        "evidence_summary": "Audience Broad shows low ROAS in grouped summary",
+        "suggested_checks": [
+          "check landing page",
+          "check creative performance for this audience"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Analyze ROAS drop in last 7 days",
+    "time": "2025-11-30T00:41:12.299994",
+    "tasks": [
+      {
+        "id": "t1",
+        "title": "compute_roas_trend",
+        "description": "compute daily ROAS for last N days"
+      },
+      {
+        "id": "t2",
+        "title": "audience_breakdown",
+        "description": "group metrics by audience_type and compute CTR/CPC/ROAS"
+      },
+      {
+        "id": "t3",
+        "title": "low_ctr_creatives",
+        "description": "list creatives with CTR below median"
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "hypothesis": "Low ROAS driven by audience: Broad",
+        "evidence_summary": "Audience Broad shows low ROAS in grouped summary",
+        "suggested_checks": [
+          "check landing page",
+          "check creative performance for this audience"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Analyze ROAS drop in last 7 days",
+    "time": "2025-11-30T00:46:05.420510",
+    "tasks": [
+      {
+        "id": "t1",
+        "title": "compute_roas_trend",
+        "description": "compute daily ROAS for last N days"
+      },
+      {
+        "id": "t2",
+        "title": "audience_breakdown",
+        "description": "group metrics by audience_type and compute CTR/CPC/ROAS"
+      },
+      {
+        "id": "t3",
+        "title": "low_ctr_creatives",
+        "description": "list creatives with CTR below median"
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "hypothesis": "Low ROAS driven by audience: Broad",
+        "evidence_summary": "Audience Broad shows low ROAS in grouped summary",
+        "suggested_checks": [
+          "check landing page",
+          "check creative performance for this audience"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Analyze ROAS drop in last 7 days",
+    "time": "2025-11-30T01:53:14.453252Z",
+    "plan": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "tasks": [
+        {
+          "id": "t1",
+          "title": "load_and_filter_data",
+          "description": "Load dataset and filter past N days.",
+          "priority": "high",
+          "required_inputs": [
+            "df_recent"
+          ]
+        },
+        {
+          "id": "t2",
+          "title": "audience_breakdown",
+          "description": "Analyze ROAS/CTR by audience.",
+          "priority": "high",
+          "required_inputs": [
+            "by_audience"
+          ]
+        },
+        {
+          "id": "t3",
+          "title": "platform_analysis",
+          "description": "Analyze performance across platforms.",
+          "priority": "medium",
+          "required_inputs": [
+            "by_platform"
+          ]
+        },
+        {
+          "id": "t4",
+          "title": "creative_performance",
+          "description": "Identify low CTR creatives.",
+          "priority": "high",
+          "required_inputs": [
+            "low_ctr_creatives"
+          ]
+        },
+        {
+          "id": "t5",
+          "title": "generate_insights",
+          "description": "Create hypotheses explaining ROAS changes.",
+          "priority": "high",
+          "required_inputs": [
+            "summary"
+          ]
+        }
+      ]
+    },
+    "summary": {
+      "recent_days": 7,
+      "total_rows": 4500,
+      "total_impressions": 90381864
+    },
+    "hypotheses_raw": [
+      {
+        "id": "h1",
+        "hypothesis": "ROAS decline likely driven by Broad audience.",
+        "reasoning": "Lowest ROAS = 4.816676998355281",
+        "suggested_checks": [
+          "Compare CTR trend by this audience.",
+          "Check spend allocation shift."
+        ],
+        "confidence_guess": 0.55
+      },
+      {
+        "id": "h2",
+        "hypothesis": "Creative fatigue may be present due to repeated messaging in low CTR creatives.",
+        "reasoning": "Multiple creatives show CTR below median.",
+        "suggested_checks": [
+          "Inspect creatives for repetition.",
+          "Check frequency."
+        ],
+        "confidence_guess": 0.6
+      }
+    ],
+    "evaluated": [
+      {
+        "id": "h1",
+        "hypothesis": "ROAS decline likely driven by Broad audience.",
+        "evidence": {
+          "pct_change_roas": 0.009251097999978985,
+          "sample_size": 350,
+          "outlier_flag": true
+        },
+        "confidence": 0.10601596812499343,
+        "verdict": "needs_review",
+        "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+      },
+      {
+        "id": "h2",
+        "hypothesis": "Creative fatigue may be present due to repeated messaging in low CTR creatives.",
+        "evidence": {
+          "pct_change_roas": 0.009251097999978985,
+          "sample_size": 350,
+          "outlier_flag": true
+        },
+        "confidence": 0.10601596812499343,
+        "verdict": "needs_review",
+        "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+      }
+    ]
+  },
+  {
+    "query": "Analyze ROAS drop in last 7 days",
+    "time": "2025-11-30T02:31:01.774540Z",
+    "plan": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "tasks": [
+        {
+          "id": "t1",
+          "title": "load_and_filter_data",
+          "description": "Load dataset and filter past N days.",
+          "priority": "high",
+          "required_inputs": [
+            "df_recent"
+          ]
+        },
+        {
+          "id": "t2",
+          "title": "audience_breakdown",
+          "description": "Analyze ROAS/CTR by audience.",
+          "priority": "high",
+          "required_inputs": [
+            "by_audience"
+          ]
+        },
+        {
+          "id": "t3",
+          "title": "platform_analysis",
+          "description": "Analyze performance across platforms.",
+          "priority": "medium",
+          "required_inputs": [
+            "by_platform"
+          ]
+        },
+        {
+          "id": "t4",
+          "title": "creative_performance",
+          "description": "Identify low CTR creatives.",
+          "priority": "high",
+          "required_inputs": [
+            "low_ctr_creatives"
+          ]
+        },
+        {
+          "id": "t5",
+          "title": "generate_insights",
+          "description": "Create hypotheses explaining ROAS changes.",
+          "priority": "high",
+          "required_inputs": [
+            "summary"
+          ]
+        }
+      ]
+    },
+    "summary": {
+      "recent_days": 7,
+      "total_rows": 4500,
+      "total_impressions": 90381864
+    },
+    "hypotheses_raw": [
+      {
+        "id": "h1",
+        "hypothesis": "ROAS decline likely driven by Broad audience.",
+        "reasoning": "Lowest ROAS = 4.816676998355281",
+        "suggested_checks": [
+          "Compare CTR trend by this audience.",
+          "Check spend allocation shift."
+        ],
+        "confidence_guess": 0.55
+      },
+      {
+        "id": "h2",
+        "hypothesis": "Creative fatigue may be present due to repeated messaging in low CTR creatives.",
+        "reasoning": "Multiple creatives show CTR below median.",
+        "suggested_checks": [
+          "Inspect creatives for repetition.",
+          "Check frequency."
+        ],
+        "confidence_guess": 0.6
+      }
+    ],
+    "evaluated": [
+      {
+        "id": "h1",
+        "hypothesis": "ROAS decline likely driven by Broad audience.",
+        "evidence": {
+          "pct_change_roas": 0.009251097999978985,
+          "sample_size": 350,
+          "outlier_flag": true
+        },
+        "confidence": 0.10601596812499343,
+        "verdict": "needs_review",
+        "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+      },
+      {
+        "id": "h2",
+        "hypothesis": "Creative fatigue may be present due to repeated messaging in low CTR creatives.",
+        "evidence": {
+          "pct_change_roas": 0.009251097999978985,
+          "sample_size": 350,
+          "outlier_flag": true
+        },
+        "confidence": 0.10601596812499343,
+        "verdict": "needs_review",
+        "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+      }
+    ]
+  }
+]

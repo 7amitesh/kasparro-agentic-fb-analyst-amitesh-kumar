@@ -1,0 +1,14 @@
+# core
+pandas==2.2.2
+numpy==1.26.4
+pyyaml==6.0
+python-dotenv==1.0.0
+
+# OpenAI: pin for ChatCompletion compatibility; if you want newer SDK, see openai adapter in code
+openai==0.28.0
+
+# testing
+pytest==7.4.2
+
+# optional (comment/uncomment if you install)
+# localai-client or huggingface client etc. can be added later

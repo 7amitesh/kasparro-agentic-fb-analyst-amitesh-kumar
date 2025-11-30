@@ -1,0 +1,29 @@
+{
+  "generated_at": "2025-11-30T02:31:01.771540Z",
+  "insights": [
+    {
+      "id": "h1",
+      "hypothesis": "ROAS decline likely driven by Broad audience.",
+      "evidence": {
+        "pct_change_roas": 0.009251097999978985,
+        "sample_size": 350,
+        "outlier_flag": true
+      },
+      "confidence": 0.10601596812499343,
+      "verdict": "needs_review",
+      "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+    },
+    {
+      "id": "h2",
+      "hypothesis": "Creative fatigue may be present due to repeated messaging in low CTR creatives.",
+      "evidence": {
+        "pct_change_roas": 0.009251097999978985,
+        "sample_size": 350,
+        "outlier_flag": true
+      },
+      "confidence": 0.10601596812499343,
+      "verdict": "needs_review",
+      "notes": "Percentage change signals: {'pct_change_roas': 0.009251097999978985, 'sample_size': 350, 'outlier_flag': True}. Computed confidence=0.11"
+    }
+  ]
+}

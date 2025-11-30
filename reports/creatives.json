@@ -1,0 +1,94 @@
+{
+  "ideas": [
+    {
+      "id": "c1",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Shop Now",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "performance",
+      "platform_fit": "Facebook"
+    },
+    {
+      "id": "c2",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Try Today",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "comfort",
+      "platform_fit": "Instagram"
+    },
+    {
+      "id": "c3",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Upgrade Comfort",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "emotion",
+      "platform_fit": "Both"
+    },
+    {
+      "id": "c4",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Explore Collection",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "social_proof",
+      "platform_fit": "Facebook"
+    },
+    {
+      "id": "c5",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Shop Now",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "performance",
+      "platform_fit": "Instagram"
+    },
+    {
+      "id": "c6",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Try Today",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "comfort",
+      "platform_fit": "Both"
+    },
+    {
+      "id": "c7",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Upgrade Comfort",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "emotion",
+      "platform_fit": "Facebook"
+    },
+    {
+      "id": "c8",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Explore Collection",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "social_proof",
+      "platform_fit": "Instagram"
+    },
+    {
+      "id": "c9",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Shop Now",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "performance",
+      "platform_fit": "Both"
+    },
+    {
+      "id": "c10",
+      "headline": "Breathable comfort, made for daily wear.",
+      "hook": "Move effortlessly with cooling fabric.",
+      "cta": "Try Today",
+      "image_idea": "Minimal flat lay with fabric texture",
+      "angle": "comfort",
+      "platform_fit": "Facebook"
+    }
+  ]
+}

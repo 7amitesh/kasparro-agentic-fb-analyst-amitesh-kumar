@@ -1,0 +1,33 @@
+# Core pipeline config
+python: "3.10"
+random_seed: 42
+
+# Data
+use_sample_data: false
+data_path: "data/synthetic_fb_ads_undergarments.csv"
+sample_data_path: "data/sample_fb_ads.csv"
+
+# LLM settings
+openai_enabled: true
+openai_model: "gpt-4o-mini"
+llm_retry_attempts: 2
+llm_timeout_seconds: 20
+
+# Evaluation thresholds
+confidence_min: 0.6
+
+# Analysis windows (days)
+recent_days: 7
+trend_window_days: 7
+long_trend_window_days: 30
+
+# Anomaly detection
+outlier_method: "iqr"   # options: iqr, zscore
+outlier_z_thresh: 3.0
+iqr_multiplier: 1.5
+
+# Logging
+logs_path: "logs/traces.json"
+
+# Misc
+max_low_ctr_creatives: 20
